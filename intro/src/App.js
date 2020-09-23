@@ -7,6 +7,8 @@ import alertify from "alertifyjs";
 import { Route, Switch } from "react-router-dom";
 import NotFound from "./NotFound";
 import CartList from "./CartList";
+import FormDemo1 from "./FormDemo1";
+import FormDemo2 from "./FormDemo2";
 
 export default class App extends Component {
   state = { currentCategory: "", products: [], cart: [] };
@@ -30,7 +32,7 @@ export default class App extends Component {
   removeFromCart = (product) => {
     let newCart = this.state.cart.filter((c) => c.product.id !== product.id);
     this.setState({ cart: newCart });
-    alertify.error(product.productName+" removed from cart");
+    alertify.error(product.productName + " removed from cart");
   };
 
   changeCategory = (category) => {
@@ -82,13 +84,19 @@ export default class App extends Component {
                     ></ProductList>
                   )}
                 ></Route>
-                <Route exact path="/cart" render={(props) => (
+                <Route
+                  exact
+                  path="/cart"
+                  render={(props) => (
                     <CartList
                       {...props}
                       cart={this.state.cart}
                       removeFromCart={this.removeFromCart}
                     ></CartList>
-                  )}></Route>
+                  )}
+                ></Route>
+                <Route path="/form2" component={FormDemo2}></Route>
+                <Route path="/form1" component={FormDemo1}></Route>
                 <Route component={NotFound}></Route>
               </Switch>
             </Col>
