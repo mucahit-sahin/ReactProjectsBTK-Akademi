@@ -1,0 +1,49 @@
+{
+    "products":[
+        {
+            "id":1,
+            "categoryId":1,
+            "productName":"iphone 5s",
+            "unitPrice":"900",
+            "unitsInStock":26
+        },
+        {
+            "id":2,
+            "categoryId":1,
+            "productName":"Samsuns s5",
+            "unitPrice":"799",
+            "unitsInStock":45
+        },
+        {
+            "id":3,
+            "categoryId":2,
+            "productName":"Arcelik 15",
+            "unitPrice":"2500",
+            "unitsInStock":15
+        },
+        {
+            "id":4,
+            "categoryId":3,
+            "productName":"Monster A5",
+            "unitPrice":"1000",
+            "unitsInStock":20
+        }
+    ],
+    "categories":[
+        {
+            "id":1,
+            "categoryName":"Telefon",
+            "seoUrl":"telefon"
+        },
+        {
+            "id":2,
+            "categoryName":"Televizyon",
+            "seoUrl":"televizyon"
+        },
+        {
+            "id":3,
+            "categoryName":"Bilgisayar",
+            "seoUrl":"bilgisayar"
+        }
+    ]
+}
