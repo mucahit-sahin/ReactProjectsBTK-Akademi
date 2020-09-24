@@ -2,7 +2,7 @@
 BTK Akademi'de "React Web Programlama" adlı kurs eğitiminde yaptığım projeler.
 
 
-1 - Intro 
+1 - Intro
 - Component Mimarisiyle Çalışmak
 - Props İle Çalışmaya Başlamak
 - Reactstrap İle Çalışmak
@@ -25,3 +25,5 @@ BTK Akademi'de "React Web Programlama" adlı kurs eğitiminde yaptığım projel
 - ConfigureStore
 - Componentin Reducera Bağlanması
 - Dispatch İle Çalışmak
+
+3 - northwind-redux
