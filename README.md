@@ -27,3 +27,8 @@ BTK Akademi'de "React Web Programlama" adlı kurs eğitiminde yaptığım projel
 - Dispatch İle Çalışmak
 
 3 - northwind-redux
+- Action Yapısını
+- Reducer Ve Store İle Çalışmak
+- ConfigureStore
+- Componentin Reducera Bağlanması
+- Connect ile çalışmak
