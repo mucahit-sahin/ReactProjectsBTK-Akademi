@@ -5,9 +5,7 @@
 - Component Mimarisiyle Çalışmak
 - Props İle Çalışmaya Başlamak
 - Reactstrap İle Çalışmak
-- Props İle Çalışmaya Başlamak
 - State İle Çalışmaya Başlamak
-- Eventlerle Çalışmaya Başlamak
 - Eventlerle Çalışmaya Başlamak
 - Componentler Arası Veri Ve Event Transferi
 - ComponentDidMount Ve Fetch İle Çalışmak
