@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class ProductList extends Component {
+export default class NotFound extends Component {
     render() {
         return (
             <div>
-                <h3>product list</h3>
+                <h3>Sayfa Bulunamadı!</h3>
             </div>
         )
     }
