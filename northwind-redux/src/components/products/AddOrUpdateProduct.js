@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { getCategories } from "../../redux/actions/categoryActions";
 import { saveProduct } from "../../redux/actions/productActions";
 import ProductDetail from "./ProductDetail";
-import { validate } from "@babel/types";
 
 function AddOrUpdateProduct({
   products,
@@ -25,25 +24,25 @@ function AddOrUpdateProduct({
 
   function handleChange(event) {
     const { name, value } = event.target;
-    setProduct(previousProduct => ({
+    setProduct((previousProduct) => ({
       ...previousProduct,
-      [name]: name === "categoryId" ? parseInt(value, 10) : value
+      [name]: name === "categoryId" ? parseInt(value, 10) : value,
     }));
 
-    validate(name,value);
+    validate(name, value);
   }
 
-  function validate(name,value) {
+  function validate(name, value) {
     if (name === "productName" && value === "") {
-      setErrors(previousErrors => ({
+      setErrors((previousErrors) => ({
         ...previousErrors,
-        productName: "Ürün ismi olmalıdır"
+        productName: "Ürün ismi olmalıdır",
       }));
-    }else{
-        setErrors(previousErrors => ({
-            ...previousErrors,
-            productName: ""
-          }));
+    } else {
+      setErrors((previousErrors) => ({
+        ...previousErrors,
+        productName: "",
+      }));
     }
   }
 
@@ -66,7 +65,7 @@ function AddOrUpdateProduct({
 }
 
 export function getProductById(products, productId) {
-  let product = products.find(product => product.id == productId) || null;
+  let product = products.find((product) => product.id == productId) || null;
   return product;
 }
 
@@ -79,16 +78,13 @@ function mapStateToProps(state, ownProps) {
   return {
     product,
     products: state.productListReducer,
-    categories: state.categoryListReducer
+    categories: state.categoryListReducer,
   };
 }
 
 const mapDispatchToProps = {
   getCategories,
-  saveProduct
+  saveProduct,
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(AddOrUpdateProduct);
+export default connect(mapStateToProps, mapDispatchToProps)(AddOrUpdateProduct);
